@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de JavaScript | figuras Geometricas-Circulo</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+     <!-- HEADER-->
+    <header>
+        <button class="logo-js-button"></button>
+    </header>
+     <!-- BAR-ASIDE -->
+    <aside>
+        <div class="aside">
+            <div class="navbar">
+                <div class="logo-aside"></div>
+                <nav class="navbar-header">
+                    <ul class="container-navItems">
+                        <li class="nav-items"><a href="./index.html">Home</a></li>
+                        <li class="nav-items"> <a href="#">Perfil</a></li>
+                        <li class="nav-items"><a href="#">Contacme</a></li>
+                    </ul>
+                </nav>
+                
+            </div>
+            <h1 class="tilte-aside">Taller de JavaScript</h1>
+            <nav class="container-navAside">
+                <ul class="nav-aside">
+                        <li class="list__items list_items--click">
+                            <div class=" list__botton list__button--click">
+                                <a class="boton-encendido"href="#">Figuras Geométricas</a>
+                            </div>
+                            <ul class="nav-figurasGeometricas ">
+                            <p class="nav-title">Primer Taller del Curso practico de JavaScript</p>
+                               <div class="container-links">
+                                   <li class="figuras-link cuadrado"><a href="./main-figuras-cuadrado.html">Cuadrado</a> </li>
+                                   <li class="figuras-link triangulo"><a href="./main-figuras-triangulo.html">Triangulo</a> </li>
+                                   <li class="figuras-link circulo"><a href="./main-figuras-circulo.html">Circulo</a> </li>
+                               </div>
+                           </ul>
+                        </li>
+                        <li class="list__items">
+                            <div class="list__botton">
+                                <a href="#">Otro Taller</a>
+                            </div>
+                        </li>
+                        <li class="list__items">
+                            <div class="list__botton">
+                                <a href="#">Otro Taller</a>
+                            </div>
+                        </li>
+                        <li class="list__items">
+                            <div class="list__botton">
+                                <a href="#">Otro Taller</a>
+                            </div>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+     <!-- MAIN-CIRCULO-->
+    <main class="container-main-welcome">
+        <!-- FONDO DEL MAIN  -->
+        <figure class="container-welcome-img-geo">
+            <img class="welcome-img-geo" src="./assets/img/fondo-talleres-figuras.svg" alt="imagen de fondo">
+        </figure>
+        <!-- EL MAIN DE LAS CARDS -->
+        <section class="mainCards__cuadrado mainCards__circulo">
+             <!-- EL TITULO DEL MAIN DE LAS CARDS -->
+            <div class="cards__cuadrado--title ">
+                <div class="logo__figuras"></div>
+                <h2 class="title__cards">Vamos a calcular el area y el perimetro del circulo!</h2>
+            </div>
+            <!-- EL CONTENEDOR DE LAS CARDS -->
+            <div class="container-cards container-cards-circulo">
+
+                <!-- CARD-PERIMETRO-CIRCUNFERENCIA-CIRCULO -->
+                <div class="cards cards__perimetro--circulo">
+                    <p class="titles__cards title__perimetro--circulo">Circunferencia</p>
+                    <div class=" img__perimetro--circulo"></div>
+                    <form action="" class="form form__card-perimetro-circulo">
+                        <label for="" class="instruccions instruccions__perimetro">Calcula la circunferencia del Circulo</label>
+                        <div class="container__input">
+                            <button class="button button__perimetro"><p>calcular</p></button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- CARD-DIAMETRO-CIRCULO -->
+                <div class="cards cards__radio-circulo">
+                    <p class="titles__cards title__radio">Diametro</p>
+                    <div class=" img__radio--circulo"></div>
+                    <form action="" class="form form__card-radio-circulo">
+                        <label for="" class="instruccions instruccions__radio-circulo">Ingresa el radio del circulo para ayar su Diametro</label>
+                        <div class="container__input">
+                            <input type="number" name="" id="" placeholder="Radio" class="input__lados">
+                            <button class="button button__lados"><p>ingresar</p></button>
+                        </div>
+                        <div class="container__input">
+                            <button class="button button__area"><p>calcular</p></button>
+                        </div>
+                    </form>
+                </div>
+
+                 <!-- CARD-AREA-CIRCULO -->
+                <div class="cards cards__area-circulo">
+                    <p class="titles__cards title__area">Area</p>
+                    <div class=" img__area--circulo"></div>
+                    <form action="" class="form form__card-area-circulo">
+                        <label for="" class="instruccions instruccions__area-circulo"> Calcula el area del circulo </label>
+                        <div class="container__input">
+                            <input type="number" name="" id="" placeholder="Altura" class="input__lados">
+                            <button class="button button__lados"><p>ingresar</p></button>
+                        </div>                   
+                    </form>
+                </div>
+
+            </div>
+        </section>
+         <!--EL TUTORIAL-->
+        <button class="tutorial tutorial-circulo">
+            <p>tutorial</p>
+        </button>
+    </main>
+     <!-- FOOTER -->
+    <footer>
+        <section class="footer-name">
+                <p class="name-title">Ieesús Chumpitaz</p>
+                <p class="name-subtitle">Front-end Developer</p> 
+        </section>
+        <section class="footer-social">
+            <a class="social git-hub" href="#"></a>
+            <a class="social linkendin" href="#"></a>
+           <a class="social twiter" href="#"></a>
+        </section>
+        <section class="footer-mensaje">
+            <p class="text-mensaje">Echo con <span class="text-emogi"></span></p>
+        </section>
+    </footer>
+    <script src="./js/sub-menu.js"></script>
+</body>
+</html>
