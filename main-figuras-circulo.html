@@ -8,15 +8,23 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
      <!-- HEADER-->
+
     <header>
         <button class="logo-js-button"></button>
     </header>
+
      <!-- BAR-ASIDE -->
+
     <aside>
+        <!-- CONTEINER DEL ASIDE -->
         <div class="aside">
+            <!-- CONTEINER DEL lOGO Y MENU-HEADER -->
             <div class="navbar">
+                <!-- LOGO -->
                 <div class="logo-aside"></div>
+                <!-- MENU-HEADER -->
                 <nav class="navbar-header">
                     <ul class="container-navItems">
                         <li class="nav-items"><a href="./index.html">Home</a></li>
@@ -24,34 +32,44 @@
                         <li class="nav-items"><a href="#">Contacme</a></li>
                     </ul>
                 </nav>
-                
             </div>
+            <!-- TITULO DE LA PAGINA -->
             <h1 class="tilte-aside">Taller de JavaScript</h1>
+            <!-- CONTENEDOR DEL MENU PRINCIPAL -->
             <nav class="container-navAside">
+                <!-- ITEMS DEL MENU -->
                 <ul class="nav-aside">
+                        <!-- TALLER DE FIGURAS GEOMETRICAS -->
                         <li class="list__items list_items--click">
+                            <!-- TITULO Y BOTON DE FIGURAS GEOMETRICAS -->
                             <div class=" list__botton list__button--click">
                                 <a class="boton-encendido"href="#">Figuras Geométricas</a>
                             </div>
+                            <!-- MENU DESPEGABLE DEL TALLER DE FIGURAS GEOMETRIAS -->
                             <ul class="nav-figurasGeometricas ">
+                            <!-- SUB-TITULO DE FIGURAS GEOMETRICAS -->
                             <p class="nav-title">Primer Taller del Curso practico de JavaScript</p>
-                               <div class="container-links">
+                                <!-- SUB-MENU DE FIGURAS GEOMETRICAS -->
+                                <div class="container-links">
                                    <li class="figuras-link cuadrado"><a href="./main-figuras-cuadrado.html">Cuadrado</a> </li>
                                    <li class="figuras-link triangulo"><a href="./main-figuras-triangulo.html">Triangulo</a> </li>
                                    <li class="figuras-link circulo"><a href="./main-figuras-circulo.html">Circulo</a> </li>
                                </div>
                            </ul>
                         </li>
+                        <!-- TALLER 2 -->
                         <li class="list__items">
                             <div class="list__botton">
                                 <a href="#">Otro Taller</a>
                             </div>
                         </li>
+                        <!-- TALLER 3 -->
                         <li class="list__items">
                             <div class="list__botton">
                                 <a href="#">Otro Taller</a>
                             </div>
                         </li>
+                        <!-- TALLER 4 -->
                         <li class="list__items">
                             <div class="list__botton">
                                 <a href="#">Otro Taller</a>
@@ -61,28 +79,38 @@
             </nav>
         </div>
     </aside>
+
      <!-- MAIN-CIRCULO-->
+
     <main class="container-main-welcome">
+
         <!-- FONDO DEL MAIN  -->
+
         <figure class="container-welcome-img-geo">
             <img class="welcome-img-geo" src="./assets/img/fondo-talleres-figuras.svg" alt="imagen de fondo">
         </figure>
         <!-- EL MAIN DE LAS CARDS -->
         <section class="mainCards__cuadrado mainCards__circulo">
+
              <!-- EL TITULO DEL MAIN DE LAS CARDS -->
+
             <div class="cards__cuadrado--title ">
                 <div class="logo__figuras"></div>
                 <h2 class="title__cards">Vamos a calcular el area y el perimetro del circulo!</h2>
             </div>
+            
             <!-- EL CONTENEDOR DE LAS CARDS -->
+
             <div class="container-cards container-cards-circulo">
 
                 <!-- CARD-PERIMETRO-CIRCUNFERENCIA-CIRCULO -->
                 <div class="cards cards__perimetro--circulo">
                     <p class="titles__cards title__perimetro--circulo">Circunferencia</p>
                     <div class=" img__perimetro--circulo"></div>
+                    <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-perimetro-circulo">
                         <label for="" class="instruccions instruccions__perimetro">Calcula la circunferencia del Circulo</label>
+                        <!-- IMPUT-CALCULAR-->
                         <div class="container__input">
                             <button class="button button__perimetro"><p>calcular</p></button>
                         </div>
@@ -93,12 +121,15 @@
                 <div class="cards cards__radio-circulo">
                     <p class="titles__cards title__radio">Diametro</p>
                     <div class=" img__radio--circulo"></div>
+                    <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-radio-circulo">
                         <label for="" class="instruccions instruccions__radio-circulo">Ingresa el radio del circulo para ayar su Diametro</label>
                         <div class="container__input">
-                            <input type="number" name="" id="" placeholder="Radio" class="input__lados">
+                            <!-- IMPUT-RADIO-->
+                            <input type="number" name="" id="" placeholder="Radio" class="input__ingresar input__lados">
                             <button class="button button__lados"><p>ingresar</p></button>
                         </div>
+                        <!-- IMPUT-CALCULAR-->
                         <div class="container__input">
                             <button class="button button__area"><p>calcular</p></button>
                         </div>
@@ -109,12 +140,24 @@
                 <div class="cards cards__area-circulo">
                     <p class="titles__cards title__area">Area</p>
                     <div class=" img__area--circulo"></div>
+                    <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-area-circulo">
                         <label for="" class="instruccions instruccions__area-circulo"> Calcula el area del circulo </label>
+                       <!-- IMPUT-ALTURA-->
                         <div class="container__input">
-                            <input type="number" name="" id="" placeholder="Altura" class="input__lados">
+                            <input type="number" name="" id="" placeholder="Altura" class="input__ingresar input__lados">
                             <button class="button button__lados"><p>ingresar</p></button>
-                        </div>                   
+                        </div>
+                       <!-- IMPUT-BASE-->
+                        <div class="container__input">
+                            <input type="number" name="" id="" placeholder="Base" class="input__ingresar input__lados">
+                            <button class="button button__lados"><p>ingresar</p></button>
+                        </div>
+                        <!-- IMPUT-CALCULAR-->
+                        <div class="container__input">
+                            <button class="button button__area"><p>calcular</p></button>
+                        </div>
+
                     </form>
                 </div>
 
@@ -125,8 +168,10 @@
             <p>tutorial</p>
         </button>
     </main>
+
      <!-- FOOTER -->
-    <footer>
+    
+     <footer>
         <section class="footer-name">
                 <p class="name-title">Ieesús Chumpitaz</p>
                 <p class="name-subtitle">Front-end Developer</p> 

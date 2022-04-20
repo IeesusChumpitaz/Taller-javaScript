@@ -8,48 +8,68 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
+    <!-- HEADER-->
+    
     <header>
         <button class="logo-js-button"></button>
     </header>
+    
+    <!-- BAR-ASIDE -->
+    
     <aside>
+        <!-- CONTEINER DEL ASIDE -->
         <div class="aside">
+            <!-- CONTEINER DEL lOGO Y MENU-HEADER -->
             <div class="navbar">
+                <!-- LOGO -->
                 <div class="logo-aside"></div>
+                <!-- MENU-HEADER -->
                 <nav class="navbar-header">
                     <ul class="container-navItems">
                         <li class="nav-items"><a href="./index.html">Home</a></li>
                         <li class="nav-items"> <a href="#">Perfil</a></li>
                         <li class="nav-items"><a href="#">Contacme</a></li>
                     </ul>
-                </nav>
-                
+                </nav>                
             </div>
+            <!-- TITULO DE LA PAGINA -->
             <h1 class="tilte-aside">Taller de JavaScript</h1>
+            <!-- CONTENEDOR DEL MENU PRINCIPAL -->
             <nav class="container-navAside">
+                <!-- ITEMS DEL MENU -->
                 <ul class="nav-aside">
+                        <!-- TALLER DE FIGURAS GEOMETRICAS -->
                         <li class="list__items list_items--click">
+                            <!-- TITULO Y BOTON DE FIGURAS GEOMETRICAS -->
                             <div class=" list__botton list__button--click">
                                 <a class="boton-encendido"href="#">Figuras Geométricas</a>
                             </div>
+                            <!-- MENU DESPEGABLE DEL TALLER DE FIGURAS GEOMETRIAS -->
                             <ul class="nav-figurasGeometricas ">
+                            <!-- SUB-TITULO DE FIGURAS GEOMETRICAS -->
                             <p class="nav-title">Primer Taller del Curso practico de JavaScript</p>
-                               <div class="container-links">
+                                <!-- SUB-MENU DE FIGURAS GEOMETRICAS -->
+                                <div class="container-links">
                                    <li class="figuras-link cuadrado"><a href="./main-figuras-cuadrado.html">Cuadrado</a> </li>
                                    <li class="figuras-link triangulo"><a href="./main-figuras-triangulo.html">Triangulo</a> </li>
                                    <li class="figuras-link circulo"><a href="./main-figuras-circulo.html">Circulo</a> </li>
                                </div>
                            </ul>
                         </li>
+                        <!-- TALLER 2 -->
                         <li class="list__items">
                             <div class="list__botton">
                                 <a href="#">Otro Taller</a>
                             </div>
                         </li>
+                        <!-- TALLER 3 -->
                         <li class="list__items">
                             <div class="list__botton">
                                 <a href="#">Otro Taller</a>
                             </div>
                         </li>
+                        <!-- TALLER 4 -->
                         <li class="list__items">
                             <div class="list__botton">
                                 <a href="#">Otro Taller</a>
@@ -59,42 +79,69 @@
             </nav>
         </div>
     </aside>
+    
+    <!-- MAIN-CUADARADO-->
+    
     <main class="container-main-welcome">
+        
+        <!-- FONDO DEL MAIN  -->
+
         <figure class="container-welcome-img-geo">
             <img class="welcome-img-geo" src="./assets/img/fondo-talleres-figuras.svg" alt="imagen de fondo">
         </figure>
+
+        <!-- EL MAIN DE LAS CARDS -->
+
         <section class="mainCards__cuadrado">
+
+            <!-- EL TITULO DEL MAIN DE LAS CARDS -->
+            
             <div class="cards__cuadrado--title ">
                 <div class="logo__figuras"></div>
                 <h2 class="title__cards">Vamos a calcular el area y el perimetro del cuadrado!</h2>
             </div>
+
+            <!-- EL CONTENEDOR DE LAS CARDS -->
+            
             <div class="container-cards">
+
+                <!-- CARD-LADOS-CUADRADO-->
                 <div class="cards cards__lados">
                     <p class="titles__cards title__lados">Lados</p>
                     <div class="img__lados"></div>
+                    <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-lados">
                         <label for="" class="instruccions instruccions__lados">Ingresa cuanto quieres que midan los lados del cuadrado</label>
+                        <!-- INPUT LADOS -->
                         <div class="container__input">
-                            <input type="number" name="" id="" placeholder="cm" class="input__lados">
+                            <input type="number" name="" id="" placeholder="cm" class="input__ingresar input__lados">
                             <button class="button button__lados"><p>ingresar</p></button>
                         </div>
                     </form>
                 </div>
+
+                <!-- CARD-PERIMETRO-CUADRADO-->
                 <div class="cards cards__perimetro">
                     <p class="titles__cards title__perimetro">Perimetro</p>
                     <div class="img__perimetro"></div>
+                    <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-perimetro">
                         <label for="" class="instruccions instruccions__perimetro">Ingresa cuanto quieres que midan los lados del cuadrado</label>
+                        <!-- IMPUT-CALCULAR-->
                         <div class="container__input">
                             <button class="button button__perimetro"><p>calcular</p></button>
                         </div>
                     </form>
                 </div>
+
+                <!-- CARD-AREA-CUADRADO-->
                 <div class="cards cards__area">
                     <p class="titles__cards title__area">Area</p>
                     <div class="img__area"></div>
+                    <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-area">
                         <label for="" class="instruccions instruccions__area">Ingresa cuanto quieres que midan los lados del cuadrado</label>
+                        <!-- IMPUT-CALCULAR-->
                         <div class="container__input">
                             <button class="button button__area"><p>calcular</p></button>
                         </div>
@@ -103,10 +150,16 @@
                 
             </div>
         </section>
+
+        <!--EL TUTORIAL-->
+
         <button class="tutorial">
             <p>tutorial</p>
         </button>
     </main>
+    
+    <!-- FOOTER -->
+    
     <footer>
         <section class="footer-name">
                 <p class="name-title">Ieesús Chumpitaz</p>
