@@ -59,7 +59,7 @@
     main{
         position: relative;
         width: 100vw;
-        height: 110rem;
+        height: 111rem;
         /* height: 144vh; */
         background: linear-gradient(127.44deg, var(--azulNoche) 28.32%, var(--verdeAzulado) 89.95%);
         display: grid;
@@ -148,30 +148,53 @@
 
     /* ESTILOS DE LAS CARDS EN GENERAL*/
         .cards{
-            width: 51.4rem;
-            height: 35.4rem;
+            width: 51.5rem;
+            height: 36.5rem;
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-            background: rgba(220, 246, 248, 0.12);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            background: rgba(18, 24, 30, 0.7);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(5px);
+            border-radius: 20px;
             box-sizing: border-box;
             box-shadow: 6px 6px 10px rgb(0 0 0 / 25%);
-            backdrop-filter: blur(1px);
-            border-radius: 25px;
             align-items: center;
+        }
+        .container-title-cards{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 44rem;
+            height: 4rem;
         }
         .titles__cards{
             font-weight: 700;
             font-size: 2rem;
             line-height: 2.4rem;
             text-transform: uppercase;
-            margin-right: 39.8rem;
+            /* margin-right: 39.8rem; */
+        }
+        .help-icon{
+            align-items: center;
+            justify-content: center;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            background-color: #e7cd02;
+            border-radius: 2rem;
+            color: black;
+            text-align: center;
+            font-size: 2.8rem;
+        }
+        .help-icon:hover{
+            width: 4rem;
+            height: 4rem;
         }
         /* ESTILOS DE LOS FORMULARIOS-CARDS EN GENERAL*/
         .form{
             width: 43.7rem;
-            height: 12rem;
+            height: 11rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -204,7 +227,7 @@
             width: 14rem;
             height: 4rem;
             padding: 0.8rem 1.2rem;
-            background: #6AE1BC;
+            background: #0ce5a1;
             box-shadow: 1px 5px 5px rgb(0 0 0 / 25%);
             border-radius: 2.5rem;
             border: 1px solid rgb(255 255 255 / 31%);
@@ -219,7 +242,7 @@
             font-weight: 700;
             font-size: 2rem;
             line-height: 2.4rem;
-            color: var(--white); 
+            color: var(--black);
             font-style: normal;
             text-align: justify;
             text-transform: uppercase;
@@ -228,7 +251,7 @@
             font-size: 2.1rem;
         }
     /* ESTILOS DEl TUTORIAL EN GENERAL*/
-        .tutorial{
+        /* .tutorial{
             grid-area: 7 / 4 / 6 / 9;
             padding: 5.5rem 0.9rem;
             position: absolute;
@@ -262,7 +285,7 @@
         .tutorial:active p{
             font-size: 2.6rem;
             color: white;
-        }
+        } */
 
     /* ESTILOS DE lAS CARDS-CUADRADO DE OTRA PAG*/
 
@@ -321,7 +344,7 @@
             grid-template-columns: repeat(2,1fr);
             grid-template-rows: repeat(2,1fr);
             justify-items: center;
-            align-items: flex-start;
+            align-items: center;
         }
 
         /* ESTILOS DE CARD-AREA-CUADRADO*/
@@ -339,9 +362,7 @@
         }
 
         /* ESTILOS DE CARD-PERIMETRO-CUADRADO*/
-        .title__perimetro{
-            margin-left: 5rem;
-        }
+
         .img__perimetro{
             width: 12rem;
             height: 12rem;
@@ -362,7 +383,7 @@
             width: 13rem;
             height: 4rem;
             padding: 0.8rem 1.2rem;
-            background: #6AE1BC;
+            background: #0ce5a1;
             box-shadow: 1px 5px 5px rgb(0 0 0 / 25%);
             border-radius: 2.5rem;
             border: 1px solid rgb(255 255 255 / 31%);
@@ -376,9 +397,11 @@
 
     /* ESTILOS DE lAS CARDS-TRIANGULO DE OTRA PAG*/
 
+    
+
         /* ESTILOS DEL CARD-LADOS-TRIANGULO*/
         .cards__lados-triangulo{
-            height: 55.9rem;
+            height: 60.9rem;
             grid-column: 1/2;
             grid-row: 1/3;
         }
@@ -394,7 +417,7 @@
         }
         .form__card-lados-triangulo{
             width: 43.7rem;
-            height: 24rem;
+            height: 34rem;
         }
         .img__perimetro--triangulo{
             width: 13.5rem; 
@@ -404,13 +427,18 @@
             background-position: center;
             background-size: cover;
         }
+        .container__input--trianguloLados{
+            height: 23rem;
+            flex-direction: column;
+            align-items: center;
+        }
         /* ESTILOS DEL CARD-PERIMETRO-TRIANGULO*/
         .form__card-perimetro-triangulo{
             height: 9.5rem;
         }
         /* ESTILOS DEL CARD-AREA-TRIANGULO*/
         .cards__area-triangulo{
-            height: 40rem;
+            height: 45rem;
         }
         .img__area--triangulo{
             width: 13.5rem; 
@@ -422,6 +450,9 @@
         }
         .form__card-area-triangulo{
             height: 18.5rem;
+        }
+        .button__area-ingresar{
+            display: none;
         }
         /* ESTILOS DE EL TUTORIAL-TRIANGULO*/
         .tutorial-triangulo{
@@ -442,9 +473,11 @@
             height: 78.1rem;
         }
         /* ESTILOS DEL CARD-CIRCUNFERENCIA-CIRCULO */
-        .title__perimetro--circulo{
-            margin-right: 27.8rem;
+        .cards__perimetro--circulo{
+            grid-column: 2/3;   
         }
+
+
         .img__perimetro--circulo{
             width: 11.6rem;
             height: 11.6rem;
@@ -457,10 +490,10 @@
         /* ESTILOS DEL CARD-DIAMETRO-CIRCULO */
         .cards__radio-circulo{
             height: 43.4rem;
+            grid-column: 1/2;
+            grid-row: 1/3;
         }
-        .title__radio{
-            margin-right: 33.8rem;
-        }
+
         .img__radio--circulo{
             width: 11.6rem;
             height: 11.6rem;
@@ -472,9 +505,12 @@
         .form__card-radio-circulo{
             height: 18rem;
         }
+        .button__radio{
+            display: none;
+        }
         /* ESTILOS DEL CARD-AREA-CIRCULO */
         .cards__area-circulo{
-            height: 40.4rem;
+            grid-column: 2/3;
         }
         .img__area--circulo{
             width: 11.6rem;
@@ -485,7 +521,14 @@
             background-size: cover;
         }
         .form__card-area-circulo{
-            height: 19rem;
+            height: 10rem;
+        }
+        .button__area-circulo{
+            display: none;
+        }
+        /*ESTILOS TUTORIAL-CIRCULO */
+        .tutorial-circulo{
+            grid-area: 8 / 4 / 6 / 2;
         }
 
 /*ESTILOS DEL ASIDE*/
@@ -509,7 +552,7 @@
         height: 0rem;
         position: absolute;
         z-index: 1;
-        background: rgb(12 19 28 / 30%);
+        background: rgba(18, 24, 30, 0.7);
         box-shadow: 6px 4px 10px rgb(0 0 0 / 25%);
         border-top: 4px solid rgba(115, 250, 201, 0.6);
         border-left: 4px solid rgba(115, 250, 201, 0.6);
@@ -676,11 +719,11 @@
             margin: 0 1rem; 
         }
         .figuras-link:hover{
-            background: linear-gradient(268deg, var(--verdePastel) 1.98%, rgba(92, 186, 169, 0) 86.68%);
+            background: linear-gradient(268deg, #0ce5a2 1.98%, #00bdc5 86.68%);
             border-radius: 14px;
             text-align: center;
             margin-left: 4rem;
-            padding: 1.6rem 4.8rem;   
+            padding: 1.6rem 3.8rem;
         }
         .figuras-link{
             font-weight: 500;
@@ -695,8 +738,9 @@
             color: var(--white);
         }
         .figuras-link:hover a{
-            color: var(--white);
-            font-size: 2.6rem;
+            color: #000;
+            font-weight: 800;
+            font-size: 2.8rem;
         }
 
 /*ESTILOS DEL FOOTER*/

@@ -105,68 +105,68 @@
 
                 <!-- CARD-PERIMETRO-CIRCUNFERENCIA-CIRCULO -->
                 <div class="cards cards__perimetro--circulo">
-                    <p class="titles__cards title__perimetro--circulo">Circunferencia</p>
+                    <!-- TITULO-CARDS Y HELP -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__perimetro--circulo">Circunferencia</p>
+                        <span class="help-icon">?</span>
+                    </div>
                     <div class=" img__perimetro--circulo"></div>
                     <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-perimetro-circulo">
                         <label for="" class="instruccions instruccions__perimetro">Calcula la circunferencia del Circulo</label>
                         <!-- IMPUT-CALCULAR-->
                         <div class="container__input">
-                            <button class="button button__perimetro"><p>calcular</p></button>
+                            <button type="button" class="button button__perimetro" onclick="calcular__circunferenciaCirculo()"><p>calcular</p></button>
                         </div>
                     </form>
                 </div>
 
                 <!-- CARD-DIAMETRO-CIRCULO -->
                 <div class="cards cards__radio-circulo">
-                    <p class="titles__cards title__radio">Diametro</p>
+                    <!-- TITULO-CARDS Y HELP -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__radio">Diametro</p>
+                        <span class="help-icon">?</span>
+                    </div>
                     <div class=" img__radio--circulo"></div>
                     <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-radio-circulo">
                         <label for="" class="instruccions instruccions__radio-circulo">Ingresa el radio del circulo para ayar su Diametro</label>
+                        <!-- IMPUT-RADIO-->
                         <div class="container__input">
-                            <!-- IMPUT-RADIO-->
-                            <input type="number" name="" id="" placeholder="Radio" class="input__ingresar input__lados">
-                            <button class="button button__lados"><p>ingresar</p></button>
+                            <input type="number" name="Radio" id="input__radioCirculo" placeholder="Radio" class="input__ingresar input__lados">
                         </div>
                         <!-- IMPUT-CALCULAR-->
                         <div class="container__input">
-                            <button class="button button__area"><p>calcular</p></button>
+                            <button type="button" class="button button__radio-calcular" onclick="calcular__diametroCirculo()"><p>calcular</p></button>
                         </div>
                     </form>
                 </div>
 
                  <!-- CARD-AREA-CIRCULO -->
                 <div class="cards cards__area-circulo">
-                    <p class="titles__cards title__area">Area</p>
+                    <!-- TITULO-CARDS Y HELP -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__area">Area</p>
+                        <span class="help-icon">?</span>
+                    </div>
                     <div class=" img__area--circulo"></div>
                     <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-area-circulo">
                         <label for="" class="instruccions instruccions__area-circulo"> Calcula el area del circulo </label>
-                       <!-- IMPUT-ALTURA-->
-                        <div class="container__input">
-                            <input type="number" name="" id="" placeholder="Altura" class="input__ingresar input__lados">
-                            <button class="button button__lados"><p>ingresar</p></button>
-                        </div>
-                       <!-- IMPUT-BASE-->
-                        <div class="container__input">
-                            <input type="number" name="" id="" placeholder="Base" class="input__ingresar input__lados">
-                            <button class="button button__lados"><p>ingresar</p></button>
-                        </div>
                         <!-- IMPUT-CALCULAR-->
                         <div class="container__input">
-                            <button class="button button__area"><p>calcular</p></button>
+                            <button type="button"  class=" button button__area" onclick="calcular__areaCirculo()"><p>calcular</p></button>
                         </div>
-
                     </form>
                 </div>
 
             </div>
         </section>
-         <!--EL TUTORIAL-->
+         <!-- EL TUTORIAL
         <button class="tutorial tutorial-circulo">
             <p>tutorial</p>
-        </button>
+        </button> -->
     </main>
 
      <!-- FOOTER -->
@@ -186,5 +186,6 @@
         </section>
     </footer>
     <script src="./js/sub-menu.js"></script>
+    <script src="./js/figuras2.js"></script>
 </body>
 </html>

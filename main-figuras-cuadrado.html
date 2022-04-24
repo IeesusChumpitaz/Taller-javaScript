@@ -107,43 +107,55 @@
 
                 <!-- CARD-LADOS-CUADRADO-->
                 <div class="cards cards__lados">
-                    <p class="titles__cards title__lados">Lados</p>
+                    <!--TITULO-CARDS Y HELP -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__lados">Lados</p>
+                        <span class="help-icon">?</span>  
+                    </div>                  
                     <div class="img__lados"></div>
                     <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-lados">
-                        <label for="" class="instruccions instruccions__lados">Ingresa cuanto quieres que midan los lados del cuadrado</label>
+                        <label for="input__lados--cuadrados" class="instruccions instruccions__lados">Ingresa cuanto quieres que midan los lados del cuadrado</label>
                         <!-- INPUT LADOS -->
                         <div class="container__input">
-                            <input type="number" name="" id="" placeholder="cm" class="input__ingresar input__lados">
-                            <button class="button button__lados"><p>ingresar</p></button>
+                            <input type="number" name="" id="input__lados--cuadrados" placeholder="cm" class="input__ingresar input__lados">
+                            <button type="button"   class="button button__lados" onclick="ingresar__ladosCuadrado()" ><p>ingresar</p></button>
                         </div>
                     </form>
                 </div>
 
                 <!-- CARD-PERIMETRO-CUADRADO-->
                 <div class="cards cards__perimetro">
-                    <p class="titles__cards title__perimetro">Perimetro</p>
+                    <!--TITULO-CARDS Y HELP -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__perimetro">Perimetro</p>
+                        <span class="help-icon">?</span>  
+                    </div>     
                     <div class="img__perimetro"></div>
                     <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-perimetro">
-                        <label for="" class="instruccions instruccions__perimetro">Ingresa cuanto quieres que midan los lados del cuadrado</label>
+                        <label for="calcular__perimetro--cuadrado" class="instruccions instruccions__perimetro">Ingresa cuanto quieres que midan los lados del cuadrado</label>
                         <!-- IMPUT-CALCULAR-->
                         <div class="container__input">
-                            <button class="button button__perimetro"><p>calcular</p></button>
+                            <button  type="button" onclick="calcular__perimetroCuadrado()" class="button button__perimetro"><p>calcular</p></button>
                         </div>
                     </form>
                 </div>
 
                 <!-- CARD-AREA-CUADRADO-->
                 <div class="cards cards__area">
-                    <p class="titles__cards title__area">Area</p>
+                    <!--TITULO-CARDS Y HELP -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__area">Area</p>
+                        <span class="help-icon">?</span>  
+                    </div>     
                     <div class="img__area"></div>
                     <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-area">
-                        <label for="" class="instruccions instruccions__area">Ingresa cuanto quieres que midan los lados del cuadrado</label>
+                        <label for="calcular__area--cuadrado" class="instruccions instruccions__area">Ingresa cuanto quieres que midan los lados del cuadrado</label>
                         <!-- IMPUT-CALCULAR-->
                         <div class="container__input">
-                            <button class="button button__area"><p>calcular</p></button>
+                            <button  type="button" onclick="calcular__areaCuadrado()" class="button button__area"><p>calcular</p></button>
                         </div>
                     </form>
                 </div>
@@ -151,11 +163,11 @@
             </div>
         </section>
 
-        <!--EL TUTORIAL-->
+        <!-- EL TUTORIAL
 
         <button class="tutorial">
             <p>tutorial</p>
-        </button>
+        </button> -->
     </main>
     
     <!-- FOOTER -->
@@ -174,6 +186,8 @@
             <p class="text-mensaje">Echo con <span class="text-emogi"></span></p>
         </section>
     </footer>
+
     <script src="./js/sub-menu.js"></script>
+    <script src="./js/figuras2.js"></script>
 </body>
 </html>
