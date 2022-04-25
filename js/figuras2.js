@@ -229,8 +229,6 @@
             });
 
 
-
-
     //tutorial-circulo
         const menuCirculo = document.getElementById("tutorial__icon");
 
