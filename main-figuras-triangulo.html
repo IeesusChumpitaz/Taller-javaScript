@@ -107,10 +107,21 @@
 
                 <!-- CARD-PERIMETRO-TRIANGULO-->
                 <div class="cards cards__perimetro">
-                    <!-- TITULO-CARDS Y HELP -->
+                    <!-- TUTORIAL-CARD-PERIMETRO-TRIANGULO-->
+                    <div class="container__tutorial container__tutorial--triangulo" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Tutorial</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">?</span>
+                        </div>
+                        <div class="tutorial__container--img">
+                            <span class="tutorial__img tutorial__img--perimetroTriangulo"></span>
+                            <span class="tutorial__formula tutorial__formula--perimetroTriangulo"></span>
+                        </div>
+                        <p class="tutorial__text tutorial__text--perimetroTriangulo">Con esta formula vas apoder calcular el perimetro del triangulo, recuerda ingresar los datos en la otra card para que la formula funcione. </p>
+                    </div>
+                    <!-- TITULO-CARDS -->
                     <div class="container-title-cards">
                         <p class="titles__cards title__perimetro">Perimetro</p>
-                        <span class="help-icon">?</span>
                     </div>
                     <div class=" img__perimetro--triangulo"></div>
                     <!-- IMPUT-FORMULARIO-->
@@ -124,19 +135,26 @@
                 </div>
 
                 <!-- CARD-LADOS-TRIANGULO -->
+                
                 <div class="cards cards__lados-triangulo">
-                     <!--TITULO-CARDS Y HELP -->
+                    <!-- TUTORIAL-CARD-LADOS-TRIANGULO-->
+                    <div class="container__tutorial container__tutorial--ladosTriangulo" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Tutorial</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">?</span>
+                        </div>
+                        <span class="tutorial__img tutorial__img--ladosTriangulo"></span>
+                        <p class="tutorial__text tutorial__text--ladosTriangulo">Ingresa cuanto mide cada lado del triangulo y su base, en las otras cards calcula el perimetro y el area del triangulo</p>
+                    </div>
+                     <!--TITULO-CARDS -->
                     <div class="container-title-cards">
                         <p class="titles__cards title__lados">Lados</p>
-                        <span class="help-icon">?</span>
                     </div>
                     <div class=" img__lados--triangulo"></div>
                     <!-- IMPUT-FORMULARIO-->
                     <form action="" class="form form__card-lados-triangulo">
-                        <label for="" class="instruccions instruccions__lados-triangulo">Ingresa cuanto quieres que midan los lados del triangulo</label>
-                        
-                        <!-- INPUT LADO-A / INPUT LADO-B / INPUT BASE-->
-                        
+                        <label for="" class="instruccions instruccions__lados-triangulo">Ingresa cuanto quieres que midan los lados del triangulo</label>                 
+                        <!-- INPUT LADO-A / INPUT LADO-B / INPUT BASE-->                    
                         <div class="container__input container__input--trianguloLados">
                             <input type="number" name="Lado A" id="input__ladoA--triangulo" placeholder="Lado A"  class="input__ingresar input__lados" required>
                             
@@ -144,7 +162,6 @@
                             
                             <input type="number" name="Base" id="input__ladoC--triangulo" placeholder="Base" class="input__ingresar input__lados"  required>
                         </div>
-
                         <!-- BOTON DE INGRESAR-TRIANGULO -->
                         <div class="container__input">
                             <button type="button" class="button button__lados" onclick="ingresar__ladostriangulo()"><p>ingresar</p></button>
@@ -153,11 +170,23 @@
                 </div>
 
                  <!-- CARD-AREA-TRIANGULO -->
+
                 <div class="cards cards__area-triangulo">
-                    <!--TITULO-CARDS Y HELP -->
+                    <!-- TUTORIAL-CARD-AREA-TRIANGULO-->
+                    <div class="container__tutorial container__tutorial--areaTriangulo" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Tutorial</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">?</span>
+                        </div>
+                        <div class="tutorial__container--img">
+                            <span class="tutorial__img tutorial__img--areaTriangulo"></span>
+                            <span class="tutorial__formula tutorial__formula--areaTriangulo"></span>
+                        </div>
+                        <p class="tutorial__text tutorial__text--areaTriangulo">ingresa la altura y Con esta formula vas apoder calcular el area del triangulo, recuerda ingresar los datos en la otra card para que la formula funcione. </p>
+                    </div>
+                    <!--TITULO-CARDS -->
                     <div class="container-title-cards">
                         <p class="titles__cards title__area">Area</p>
-                        <span class="help-icon">?</span>  
                     </div>     
                     <div class=" img__area--triangulo"></div>
                      <!-- IMPUT-FORMULARIO-->

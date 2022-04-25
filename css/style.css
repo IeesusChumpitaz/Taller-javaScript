@@ -11,6 +11,7 @@
         --verdePastel:#00BDC5;
         --verdeFosforecente:#73FAC9;
         --white:#fff;
+        --gold:#e7cd02;
     }
 
     *{
@@ -160,6 +161,8 @@
             box-sizing: border-box;
             box-shadow: 6px 6px 10px rgb(0 0 0 / 25%);
             align-items: center;
+            position: relative;
+            overflow: hidden;
         }
         .container-title-cards{
             display: flex;
@@ -175,22 +178,102 @@
             text-transform: uppercase;
             /* margin-right: 39.8rem; */
         }
-        .help-icon{
-            align-items: center;
-            justify-content: center;
-            width: 3rem;
-            height: 3rem;
+
+        /* ESTILOS DEL TUTORIAL DE LAS CARDS EN GENERAL*/
+        
+        .container__tutorial{
+            width: 51.5rem;
+            height: 37rem;
             display: flex;
-            background-color: #e7cd02;
-            border-radius: 2rem;
-            color: black;
+            position: absolute;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
             text-align: center;
-            font-size: 2.8rem;
+            background: var(--gold);
+            color: var(--black);
+            z-index: 6;
+            clip-path: circle(1.5rem at 92.7% 3.7rem);
+            transition: .6s ease all;
         }
-        .help-icon:hover{
-            width: 4rem;
-            height: 4rem;
+        .container__tutorial:active{
+            clip-path: circle(130% at 92.7% 3.7rem); 
         }
+        .container__tutorial--circulo{
+            width: 51.5rem;
+            height: 44rem;
+            clip-path: circle(1.5rem at 92.7% 4.7rem);
+        }
+        .container__tutorial--circulo:active{
+            clip-path: circle(130% at 92.7% 4.7rem); 
+        }
+        .container-tutorial-title{
+            display: flex;
+            width: 45rem;
+            height: 6rem;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .tutorial__title{
+            font-size: 2.6rem;
+            font-weight: 800;
+            display: flex;
+            text-transform: uppercase;
+        }
+        .tutorial__icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2.5rem;
+            cursor: pointer;
+        }
+        .tutorial__icon:hover{
+            animation: rotar 1.2s alternate
+        }
+
+        @keyframes rotar{
+            0% {transform: rotate(0deg);}
+            20% {transform: rotate(10deg);}
+            40% {transform: rotate(-15deg);}
+            60% {transform: rotate(15deg);}
+            80% {transform: rotate(-10deg);}
+            100% {transform: rotate(0deg);}
+        } 
+
+        .tutorial__container--img{
+            width: 100%;
+            height: 15rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .tutorial__img{
+            width: 19rem;
+            height: 15rem;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+         
+        .tutorial__formula{
+            width: 15.4rem;
+            height: 6rem;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .tutorial__text{
+            height: 10rem;
+            padding: 0 3rem;
+            font-size: 1.8rem;
+            font-weight: 800;
+            text-align: start;
+            margin-bottom: 2.3rem;
+            text-transform: uppercase;
+        }
+
         /* ESTILOS DE LOS FORMULARIOS-CARDS EN GENERAL*/
         .form{
             width: 43.7rem;
@@ -246,46 +329,12 @@
             font-style: normal;
             text-align: justify;
             text-transform: uppercase;
+            cursor: pointer;
         }
         .button:active p{
             font-size: 2.1rem;
         }
-    /* ESTILOS DEl TUTORIAL EN GENERAL*/
-        /* .tutorial{
-            grid-area: 7 / 4 / 6 / 9;
-            padding: 5.5rem 0.9rem;
-            position: absolute;
-            width: 13.8rem;
-            height: 13.9rem;
-            background: #077299;
-            box-shadow: 0.5rem 0.5rem 0.5rem 0.1rem rgba(0, 0, 0, 0.25), -0.5rem -0.5rem 0.5rem rgba(255, 255, 255, 0.25);
-            border-radius: 7.1rem;
-            border-style: hidden;
-            transition: transform 1s ease, opacity 1s ease ;
-        }
-        .tutorial:active{
-            width: 16rem;
-            height: 15.9rem;
-            border-radius: 9rem;  
-            transition: all 0.2s; 
-        }
 
-        .tutorial p{
-            font-style: normal;
-            font-weight: 800;
-            font-size: 2rem;
-            line-height: 2.9rem;
-            text-transform: uppercase;
-            color: white;
-        }
-        .tutorial:hover p{
-            color: var(--verdeFosforecente);
-            
-        }
-        .tutorial:active p{
-            font-size: 2.6rem;
-            color: white;
-        } */
 
     /* ESTILOS DE lAS CARDS-CUADRADO DE OTRA PAG*/
 
@@ -315,6 +364,7 @@
             flex-direction: column;
             
         }
+
         /* ESTILOS DEL TITULO DEL MAIN DE LAS CARD-CUADRADO*/
         .cards__cuadrado--title{
             grid-column: 1/6;
@@ -345,6 +395,23 @@
             grid-template-rows: repeat(2,1fr);
             justify-items: center;
             align-items: center;
+        }
+         /* ESTILOS DEl TUTORIAL CARD-CUADRADO*/
+        .tutorial__img--ladosCuadrado{
+            background-image: url(../assets/img/cuadrado-lados-azul.svg);
+        }
+        .tutorial__img--areaCuadrado{
+            width: 16rem;
+            height: 14rem;
+            background-image: url(../assets/img/cuadrado-area-azul.svg);
+        }
+        .tutorial__formula--perimetroCuadrado{
+            background-image: url("../assets/img/formula-perimetro-cuadrado.svg");
+            margin-right: 5rem;
+        }
+        .tutorial__formula--areaCuadrado{
+            background-image: url("../assets/img/formula-area-cuadrado.svg");
+            margin-right: 5rem;
         }
 
         /* ESTILOS DE CARD-AREA-CUADRADO*/
@@ -397,7 +464,55 @@
 
     /* ESTILOS DE lAS CARDS-TRIANGULO DE OTRA PAG*/
 
-    
+        /* ESTILOS DE EL TUTORIAL-TRIANGULO*/
+        .container__tutorial--ladosTriangulo{
+            height: 67rem;
+            clip-path: circle(1.5rem at 92.7% 6.9rem);
+        }
+        .container__tutorial--ladosTriangulo:active{
+            clip-path: circle(130% at 92.7% 3.7rem);
+        }
+
+        .container__tutorial--areaTriangulo{
+            height: 48rem;
+            clip-path: circle(1.5rem at 92.7% 5.4rem);
+        }
+        .container__tutorial--areaTriangulo:active{
+            clip-path: circle(130% at 92.7% 3.7rem);
+        }
+        .tutorial__img--perimetroTriangulo{
+            background-image: url("../assets/img/lados-triangulo-tutorial.svg");
+            width: 14rem;
+            height: 16rem;
+        }
+        .tutorial__formula--perimetroTriangulo{
+            background-image: url(../assets/img/formula-perimetro-triangulo.svg);
+            margin-right: 3rem;
+            width: 21.4rem;
+            height: 6rem;
+        }
+        .tutorial__img--ladosTriangulo{
+            width: 21rem;
+            height: 24rem;
+            background-image:url("../assets/img/lados-triangulo-tutorial.svg");
+        }
+        .tutorial__text--ladosTriangulo{
+            margin-bottom: 3.5rem;
+        }
+        .tutorial__img--areaTriangulo{
+            width: 24rem;
+            height: 21rem;
+            background-image:url("../assets/img/area-triangulo-tutorial.svg");
+        
+        }
+        .tutorial__formula--areaTriangulo{
+            background-image: url(../assets/img/formula-area-triangulo.svg);
+            margin-right: 1rem;
+            width: 22.4rem;
+            height: 6.1rem;
+        }
+
+
 
         /* ESTILOS DEL CARD-LADOS-TRIANGULO*/
         .cards__lados-triangulo{
@@ -454,10 +569,8 @@
         .button__area-ingresar{
             display: none;
         }
-        /* ESTILOS DE EL TUTORIAL-TRIANGULO*/
-        .tutorial-triangulo{
-            grid-area: 8 / 1 / 7 / 5;
-        }
+        
+
 
     /* ESTILOS DE lAS CARDS-CIRCULO DE OTRA PAG*/
 
@@ -472,6 +585,41 @@
             width: 115rem;
             height: 78.1rem;
         }
+        /* ESTILOS DEL TUTORIAL DE LAS CARDS-CIRCULO*/
+        .tutorial__img--diametroCirculo{
+            width: 16rem;
+            height: 16rem;
+            background-image: url(../assets/img/diametro-circulo-tutorial.svg);
+        }
+
+        .tutorial__img--circunferenciaCirculo{
+            width: 14rem;
+            height: 14rem;
+            background-image: url(../assets/img/circunferencia-circulo-tutorial.svg);
+        }
+
+        .tutorial__img--areaCirculo{
+            width: 14rem;
+            height: 14rem;
+            background-image: url(../assets/img/area-circulo-tutorial.svg);
+        }
+        .tutorial__formula--diametroCirculo{
+            background-image: url("../assets/img/formula-diametro-circulo.svg");
+            margin-right: 5rem;
+        }
+        .tutorial__formula--circunferenciaCirculo{
+            background-image: url("../assets/img/formula-circunferencia-circulo.svg");
+            margin-right: 5rem;
+            width: 18.9rem;
+            height: 5.9rem;
+        }
+        .tutorial__formula--areaCirculo{
+            background-image: url(../assets/img/formula-area-circulo.svg);
+            margin-right: 5rem;
+            width: 18.9rem;
+            height: 6rem;
+        }
+
         /* ESTILOS DEL CARD-CIRCUNFERENCIA-CIRCULO */
         .cards__perimetro--circulo{
             grid-column: 2/3;   

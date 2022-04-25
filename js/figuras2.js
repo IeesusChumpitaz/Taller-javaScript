@@ -205,3 +205,35 @@
                 console.log("Error!");
             }
         }
+
+//TUTORIAL
+
+
+    //tutorial-cuadrado
+        const menu = document.getElementById("tutorial__icon");
+
+            menu.addEventListener('click',() =>{
+                document.getElementById("container__tutorial").classList.toggle('active');
+            });
+
+    //tutorial-triangulo
+        const menuTrianguloLados = document.getElementById("tutorial__icon");
+
+            menu.addEventListener('click',() =>{
+                document.getElementById("container__tutorial--ladosTriangulo").classList.toggle('active');
+            });
+        const menuTrianguArea = document.getElementById("tutorial__icon");
+
+            menu.addEventListener('click',() =>{
+                document.getElementById("container__tutorial--areaTriangulo").classList.toggle('active');
+            });
+
+
+
+
+    //tutorial-circulo
+        const menuCirculo = document.getElementById("tutorial__icon");
+
+            menuCirculo.addEventListener('click',() =>{
+                document.getElementById("container__tutorial--circulo").classList.toggle('active');
+            });
