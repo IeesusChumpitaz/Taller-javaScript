@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de JavaScript</title>
+    <link rel="stylesheet" href="../css/descuento.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+
+     <header>
+        <button class="logo-js-button"></button>
+    </header> 
+
+    <!-- EL BAR-ASIDE -->
+
+    <aside> 
+          <!-- CONTEINER DEL ASIDE -->
+        <div class="aside">
+            <!-- CONTEINER DEL LOGO Y MENU-HEADER  -->
+            <div class="navbar">
+                <!-- LOGO -->
+                <div class="logo-aside"></div>
+                <!-- MENU-HEADER -->
+                <nav class="navbar-header">
+                    <ul class="container-navItems">
+                        <li class="nav-items"><a href="../html/index.html">Home</a></li>
+                        <li class="nav-items"> <a href="#">Perfil</a></li>
+                        <li class="nav-items"><a href="#">Contacme</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- TITULO DE LA PAGINA -->
+            <h1 class="tilte-aside">Taller de JavaScript</h1>
+            <!-- CONTENEDOR DEL MENU PRINCIPAL -->
+            <nav class="container-navAside">
+                <!-- ITEMS DEL MENU -->
+                <ul class="nav-aside">
+                        <!-- TALLER DE FIGURAS GEOMETRICAS -->
+                        <li class="list__items list_items--click">
+                            <!-- TITULO Y BOTON DE FIGURAS GEOMETRICAS -->
+                            <div class=" list__botton list__button--click">
+                                <a class="boton-encendido"href="#">Figuras Geométricas</a>
+                            </div>
+                            <!-- MENU DESPEGABLE DEL TALLER DE FIGURAS GEOMETRIAS -->
+                            <ul class="nav-figurasGeometricas ">
+                                <!-- SUB-TITULO DE FIGURAS GEOMETRICAS -->
+                            <p class="nav-title">Primer Taller del Curso practico de JavaScript</p>
+                               <!-- SUB-MENU DE FIGURAS GEOMETRICAS -->
+                                <div class="container-links">
+                                   <li class="figuras-link cuadrado"><a href="../html/main-figuras-cuadrado.html">Cuadrado</a> </li>
+                                   <li class="figuras-link triangulo"><a href="../html/main-figuras-triangulo.html">Triangulo</a> </li>
+                                   <li class="figuras-link circulo"><a href="../html/main-figuras-circulo.html">Circulo</a> </li>
+                               </div>
+                           </ul>
+                        </li>
+                        <!-- TALLER 2 -->
+                        <li class="list__items">
+                            <div class="list__botton">
+                                <a href="../html/main-porcentaje.html">Porcentajes y Descuentos</a>
+                            </div>
+                        </li>
+                        <!-- TALLER DE ESTADISTICA -->
+                        <li class="list__items list_items--click">
+                            <!-- TITULO Y BOTON DE ESTADISTICA -->
+                            <div class=" list__botton list__button--click">
+                                <a class="boton-encendido"href="#">Estadistica</a>
+                            </div>
+                            <!-- MENU DESPEGABLE DEL TALLER DE ESTADISTICA -->
+                            <ul class="nav-figurasGeometricas ">
+                                <!-- SUB-TITULO DE ESTADISTICA -->
+                            <p class="nav-title">Tercer Taller del Curso practico de JavaScript</p>
+                               <!-- SUB-MENU DE ESTADISTICA -->
+                                <div class="container-links">
+                                   <li class="figuras-link cuadrado"><a href="../html/main-mediaAritmetica.html">Media Aritmetica</a></li>
+                                   <li class="figuras-link triangulo"><a href="">Mediana</a> </li>
+                                   <li class="figuras-link circulo"><a href="">Moda</a> </li>
+                               </div>
+                           </ul>
+                        </li>
+                        <!-- TALLER 4 -->
+                        <li class="list__items">
+                            <div class="list__botton">
+                                <a href="#">Otro Taller</a>
+                            </div>
+                        </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <!-- EL MAIN-Taller2 -->
+    <main class="container-main-welcome">
+        
+        <!-- FONDO DEL MAIN  -->
+        <figure class="container-welcome-img-geo">
+            <img class="welcome-img-geo" src="../assets/img/descuentosimg1.svg" alt="imagen de fondo">
+        </figure>
+        <figure class="container-welcome-img-geo container-welcome-img-geo2">
+            <img class = "welcome-img-geo welcome-img-geo2" src="../assets/img/descuentoimg2.svg" alt="">
+        </figure>
+        
+        <!-- EL MAIN DE LAS CARDS --> 
+        <section class="mainCards__taller2">
+            
+            <!-- EL TITULO DEL MAIN DE LAS CARDS -->
+            <div class="cards__taller2--title ">
+                <div class="logo__figuras"></div>
+                <h2 class="title__cards">Vamos a calcular el precio de tus productos con el descuento de la Platzi-Card!</h2>
+            </div>
+            
+            <!-- EL CONTENEDOR DE LAS CARD TARJETA -->
+            <div class="container-cards">
+
+                <!-- CARD-TARJETA -->                
+                <div class="cards">
+                    <!--TITULO-CARD-TARJETA -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards ">Platzi-Card</p>
+                    </div>
+                    <!-- CONTENIDO-CARD-TARJETA --> 
+                    <div class="container-card-form">
+                        <!-- IMAGEN-CARD-TARJETA --> 
+                        <div class="container-card-formIm">
+                            <img class=" img__form-desconu" src="../assets/img/tarjet-img.svg" alt="imagen de un chip ">
+                            <p>2do taller de JavaScript</p>
+                        </div>
+                        <!-- IMPUT-FORMULARIO-TARJETA-->
+                        <form action="" class="form">                  
+                            <!-- INPUT-TARJETA -->                    
+                            <div class="container__input container__input--descuento">
+                                <label for="inputPrice" class="inputPrice">ingresa el precio de tu producto</label>
+                                <div class="subcontainer-input">
+                                    <input type="number" name="Precio" id="inputPrices" placeholder="Precio"  class="input__ingresar " required>
+                                    <p>$</p>
+                                </div>
+                                <label for="inputCoupon" class="inputPrice">escribe el cupón de descuento para tu descuento</label>
+                                <div class="subcontainer-input">
+                                    <input type="text" name="descuento" id="inputCoupon" placeholder="Descuento" class="input__ingresar input-ingresar-descount" required >
+                                    <p>%</p>
+                                </div>
+                            </div>
+                            <!-- BOTON DE CALCULAR PRECIO-TARJETA -->
+                            <div class="container__input container__input--descuento-button">
+                                <button type="button" class="button button__calcularDescuento" onclick="calcular_descuentoConPrecio()"><p>Calcular</p></button>
+                                <div class="result" id="result"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- EL FOOTER -->
+
+    <footer>
+        <section class="footer-name">
+                <p class="name-title">Ieesús Chumpitaz</p>
+                <p class="name-subtitle">Front-end Developer</p> 
+        </section>
+        <section class="footer-social">
+            <a class="social git-hub" href="#"></a>
+            <a class="social linkendin" href="#"></a>
+           <a class="social twiter" href="#"></a>
+        </section>
+        <section class="footer-mensaje">
+            <p class="text-mensaje">Echo con <span class="text-emogi"></span></p>
+        </section>
+    </footer>
+
+    <!-- JAVA-SCRIPT -->
+
+    <script src="../js/sub-menu.js"></script>
+    <script src="../js/descuentos.js"></script>
+
+</body>
+</html>

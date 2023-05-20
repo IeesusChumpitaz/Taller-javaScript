@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller de JavaScript | figuras Geometricas</title>
+    <link rel="stylesheet" href="../css/figuras-geometricas.css">
+</head>
+
+<body>
+    <main class="container-main-welcome">
+        <figure class="container-welcome-img-geo">
+            <img class="welcome-img-geo" src="../assets/img/fondo-talleres-figuras.svg" alt="imagen de fondo">
+        </figure>
+        <!-- EL MAIN CONTAINER DE LOS SECTIONS -->
+        <div class="mainCards">
+            <!-- EL TITULO DEL MAIN DE LAS SECTIONS -->
+            <div class="cards__title-container ">
+                <div class="logo__figuras"></div>
+                <!-- titulo del seccion cuadrado -->
+                <h2 class="title__cards">Vamos a calcular el area y el perimetro del cuadrado!</h2>
+            </div>
+            <!-- EL CONTENEDOR DEL SECTION CUADRADO  -->
+            <section class="container-cards">
+                <!-- CARD-LADOS-CUADRADO-->
+                <div class="cards cards__lados" id="cards cards__lados">
+                    <!--TITULO-CARDS-->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__lados">Lados</p>
+                        <div class="button__icon-tutorial">?</div>
+                    </div>
+                    <!-- IMG CARD -->
+                    <div class="img__lados"></div>
+                    <!-- IMPUT-FORMULARIO-->
+                    <form action="" class="form form__card-lados">
+                        <label for="input__lados--cuadrados" class="instruccions instruccions__lados">Ingresa cuanto
+                            mide cada lado</label>
+                        <!-- INPUT LADOS -->
+                        <div class="container__input">
+                            <input type="number" name="" id="input__lados--cuadrados" placeholder="cm"
+                                class="input__ingresar input__lados">
+                            <button type="button" class="button button__lados" onclick="ingresar__ladosCuadrado()">
+                                <p>ingresar</p>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- TUTORIAL-CARD-LADOS-CUADRADO-->
+                    <div class="container__tutorial container__tutorial--cuadrado active" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Formula</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">x</span>
+                        </div>
+                        <span class="tutorial__img tutorial__img--ladosCuadrado"></span>
+                        <p class="tutorial__text tutorial__text--LadosCuadrado">todos los lados de un cuadrado miden
+                            igual.</p>
+                    </div>
+                </div>
+                <!-- CARD-PERIMETRO-CUADRADO-->
+                <div class="cards cards__perimetro">
+                    <!-- TUTORIAL-CARD-PERIMETRO-CUADRADO-->
+                    <div class="container__tutorial container__tutorial--cuadrado active" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Formula</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">x</span>
+                        </div>
+                        <div class="tutorial__container--img">
+                            <span class="tutorial__img tutorial__img--perimetroCuadrado"></span>
+                            <span class="tutorial__formula tutorial__formula--perimetroCuadrado"></span>
+                        </div>
+                        <p class="tutorial__text tutorial__text--perimetroCuadrado">Esta es la formula para calcular el
+                            perimetro del cuadrado. </p>
+                    </div>
+                    <!--TITULO-CARDS-->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__perimetro">Perimetro</p>
+                        <div class="button__icon-tutorial">?</div>
+                    </div>
+                    <div class="img__perimetro"></div>
+                    <!-- IMPUT-FORMULARIO-->
+                    <form action="" class="form form__card-perimetro">
+                        <label for="calcular__perimetro--cuadrado" class="instruccions instruccions__perimetro">Calcula
+                            el perimetro del cuadrado</label>
+                        <!-- IMPUT-CALCULAR-->
+                        <div class="container__input">
+                            <button type="button" onclick="calcular__perimetroCuadrado()"
+                                class="button button__perimetro">
+                                <p>calcular</p>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <!-- CARD-AREA-CUADRADO-->
+                <div class="cards cards__area">
+                    <!--TITULO-CARDS  -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__area">Area</p>
+                        <div class="button__icon-tutorial">?</div>
+                    </div>
+                    <!-- IMG CARD -->
+                    <div class="img__area"></div>
+                    <!-- IMPUT-FORMULARIO-->
+                    <form action="" class="form form__card-area">
+                        <label for="calcular__area--cuadrado" class="instruccions instruccions__area">calcula el area
+                            del cuadrado</label>
+                        <!-- IMPUT-CALCULAR-->
+                        <div class="container__input">
+                            <button type="button" onclick="calcular__areaCuadrado()" class="button button__area">
+                                <p>calcular</p>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- TUTORIAL-CARD-AREA-CUADRADO-->
+                    <div class="container__tutorial container__tutorial--cuadrado active" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Formula</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">x</span>
+                        </div>
+                        <div class="tutorial__container--img">
+                            <span class="tutorial__img tutorial__img--areaCuadrado"></span>
+                            <span class="tutorial__formula tutorial__formula--areaCuadrado"></span>
+                        </div>
+                        <p class="tutorial__text tutorial__text--areaCuadrado">Esta es la formula para calcular el area
+                            del cuadrado.</p>
+                    </div>
+                </div>
+            </section>
+            <!-- EL CONTENEDOR DEL SECTION TRAINGULO -->
+            <section class="container-cards">
+                <!-- CARD-LADOS-TRIANGULO -->
+                <div class="cards cards__lados-triangulo">
+                    <!--TITULO-CARD -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__lados">Lados</p>
+                    </div>
+                    <!-- IMG-CARD -->
+                    <div class=" img__lados--triangulo"></div>
+                    <!-- IMPUT-FORMULARIO-->
+                    <form action="" class="form form__card-lados-triangulo">
+                        <label for="" class="instruccions instruccions__lados-triangulo">Ingresa cuanto quieres que
+                            midan los lados del triangulo</label>
+                        <!-- INPUT LADO-A / INPUT LADO-B / INPUT BASE-->
+                        <div class="container__input container__input--trianguloLados">
+                            <input type="number" name="Lado A" id="input__ladoA--triangulo" placeholder="Lado A"
+                                class="input__ingresar input__lados" required>
+
+                            <input type="number" name="lado B" id="input__ladoB--triangulo" placeholder="Lado B"
+                                class="input__ingresar input__lados" required>
+
+                            <input type="number" name="Base" id="input__ladoC--triangulo" placeholder="Base"
+                                class="input__ingresar input__lados" required>
+                        </div>
+                        <!-- BOTON DE INGRESAR-TRIANGULO -->
+                        <div class="container__input">
+                            <button type="button" class="button button__lados" onclick="ingresar__ladostriangulo()">
+                                <p>ingresar</p>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- TUTORIAL-CARD-LADOS-TRIANGULO-->
+                    <div class="container__tutorial active" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Formula</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">x</span>
+                        </div>
+                        <span class="tutorial__img tutorial__img--ladosTriangulo"></span>
+                        <p class="tutorial__text tutorial__text--ladosTriangulo">Ingresa cuanto mide cada lado del
+                            triangulo y su base</p>
+                    </div>
+                </div>
+                <!-- CARD-PERIMETRO-TRIANGULO-->
+                <div class="cards cards__perimetro">
+                    <!-- TITULO-CARD -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__perimetro">Perimetro</p>
+                    </div>
+                    <!-- IMG-CARD -->
+                    <div class=" img__perimetro--triangulo"></div>
+                    <!-- IMPUT-FORMULARIO-->
+                    <form action="" class="form form__card-perimetro-triangulo">
+                        <label for="" class="instruccions instruccions__perimetro">Calcula el perimetro del
+                            triangulo</label>
+                        <!-- BOTON-CALCULAR-->
+                        <div class="container__input">
+                            <button type="button" class="button button__perimetro"
+                                onclick="ingresar__perimetroTriangulo()">
+                                <p>calcular</p>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- TUTORIAL-CARD-PERIMETRO-TRIANGULO-->
+                    <div class="container__tutorial active" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Formula</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">x</span>
+                        </div>
+                        <div class="tutorial__container--img">
+                            <span class="tutorial__img tutorial__img--perimetroTriangulo"></span>
+                            <span class="tutorial__formula tutorial__formula--perimetroTriangulo"></span>
+                        </div>
+                        <p class="tutorial__text tutorial__text--perimetroTriangulo">Con esta formula vas apoder
+                            calcular el perimetro del triangulo.</p>
+                    </div>
+                </div>
+                <!-- CARD-AREA-TRIANGULO -->
+                <div class="cards cards__area-triangulo">
+                    <!--TITULO-CARDS -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__area">Area</p>
+                    </div>
+                    <!-- IMG-CARD -->
+                    <div class=" img__area--triangulo"></div>
+                    <!-- IMPUT-FORMULARIO-->
+                    <form action="" class="form form__card-area-triangulo">
+                        <label for="" class="instruccions instruccions__area-triangulo">Calcula el
+                            area del triangulo </label>
+                        <!-- IMPUT-AREA DEL TRIANGULO-->
+                        <div class="container__input">
+                            <input type="number" name="Altura" id="input__altura--triangulo" placeholder="Altura"
+                                class="input__ingresar input__lados">
+                            <!-- BOTON CALCULAR -->
+                            <button type="button" class="button button__area" onclick="calcular__areaTriangulo()">
+                                <p>calcular</p>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- TUTORIAL-CARD-AREA-TRIANGULO-->
+                    <div class="container__tutorial active" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Formula</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">x</span>
+                        </div>
+                        <div class="tutorial__container--img">
+                            <span class="tutorial__img tutorial__img--areaTriangulo"></span>
+                            <span class="tutorial__formula tutorial__formula--areaTriangulo"></span>
+                        </div>
+                        <p class="tutorial__text tutorial__text--areaTriangulo">con esta formula puedes calcular el area
+                            del triangulo</p>
+                    </div>
+                </div>
+            </section>
+            <!-- EL CONTENEDOR DEL SECTION CIRCULO -->
+            <section class="container-cards">
+                <!-- CARD-PERIMETRO-CIRCUNFERENCIA-CIRCULO -->
+                <div class="cards cards__perimetro--circulo">
+                    <!-- TITULO-CARDS -->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__perimetro--circulo">Circunferencia</p>
+                    </div>
+                    <!-- IMG CARD -->
+                    <div class=" img__perimetro--circulo"></div>
+                    <!-- IMPUT-FORMULARIO-->
+                    <form action="" class="form form__card-perimetro-circulo">
+                        <label for="" class="instruccions instruccions__perimetro">Calcula la circunferencia del
+                            Circulo</label>
+                        <!-- IMPUT-CALCULAR-->
+                        <div class="container__input">
+                            <button type="button" class="button button__perimetro"
+                                onclick="calcular__circunferenciaCirculo()">
+                                <p>calcular</p>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- TUTORIAL-CARD-CIRCUNFERENCIA-CIRCULO-->
+                    <div class="container__tutorial active" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Formula</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">x</span>
+                        </div>
+                        <div class="tutorial__container--img">
+                            <span class="tutorial__img tutorial__img--circunferenciaCirculo"></span>
+                            <span class="tutorial__formula tutorial__formula--circunferenciaCirculo"></span>
+                        </div>
+                        <p class="tutorial__text tutorial__text--circunferenciaCirculo">Esta es la formula para calcular
+                            la circunferencia del circulo.</p>
+                    </div>
+                </div>
+                <!-- CARD-DIAMETRO-CIRCULO -->
+                <div class="cards cards__radio-circulo">
+                    <!-- TITULO-CARDS-->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__radio">Diametro</p>
+                    </div>
+                    <!-- IMG CARD -->
+                    <div class=" img__radio--circulo"></div>
+                    <!-- IMPUT-FORMULARIO-->
+                    <form action="" class="form form__card-radio-circulo">
+                        <label for="" class="instruccions instruccions__radio-circulo">calcula el diametro del
+                            circulo.</label>
+                        <!-- IMPUT-RADIO-->
+                        <div class="container__input">
+                            <input type="number" name="Radio" id="input__radioCirculo" placeholder="Radio"
+                                class="input__ingresar input__lados">
+                            <!-- BOTON CALCULAR -->
+                            <button type="button" class="button button__radio-calcular"
+                                onclick="calcular__diametroCirculo()">
+                                <p>calcular</p>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- TUTORIAL-CARD-DIAMETRO-CIRCULO-->
+                    <div class="container__tutorial active" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Formula</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">x</span>
+                        </div>
+                        <div class="tutorial__container--img">
+                            <span class="tutorial__img tutorial__img--diametroCirculo"></span>
+                            <span class="tutorial__formula tutorial__formula--diametroCirculo"></span>
+                        </div>
+                        <p class="tutorial__text tutorial__text--diametroCirculo">esta es la formula para calcula el
+                            diametro del circulo.</p>
+                    </div>
+                </div>
+                <!-- CARD-AREA-CIRCULO -->
+                <div class="cards cards__area-circulo">
+                    <!-- TITULO-CARDS-->
+                    <div class="container-title-cards">
+                        <p class="titles__cards title__area">Area</p>
+                    </div>
+                    <!-- IMG CARD -->
+                    <div class=" img__area--circulo"></div>
+                    <!-- IMPUT-FORMULARIO-->
+                    <form action="" class="form form__card-area-circulo">
+                        <label for="" class="instruccions instruccions__area-circulo"> Calcula el area del circulo
+                        </label>
+                        <!-- IMPUT-CALCULAR-->
+                        <div class="container__input">
+                            <button type="button" class=" button button__area" onclick="calcular__areaCirculo()">
+                                <p>calcular</p>
+                            </button>
+                        </div>
+                    </form>
+                    <!-- TUTORIAL-CARD-CIRCUNFERENCIA-CIRCULO-->
+                    <div class="container__tutorial active" id="container__tutorial">
+                        <div class="container-tutorial-title">
+                            <h3 class="tutorial__title">Formula</h3>
+                            <span class="tutorial__icon" id="tutorial__icon">x</span>
+                        </div>
+                        <div class="tutorial__container--img">
+                            <span class="tutorial__img tutorial__img--areaCirculo"></span>
+                            <span class="tutorial__formula tutorial__formula--areaCirculo"></span>
+                        </div>
+                        <p class="tutorial__text tutorial__text--areaCirculo">Esta es la formula para calcular el area
+                            del circulo.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <aside>
+        <!-- CONTEINER DEL ASIDE -->
+        <div class="bar-aside">
+            <!-- CONTEINER DEL lOGO Y MENU-HEADER -->
+            <div class="navbar">
+                <!-- LOGO -->
+                <div class="logo-aside"></div>
+                <!-- MENU-HEADER -->
+                <nav class="navbar-header">
+                    <ul class="container-navItems">
+                        <li class="nav-items"><a href="../html/index.html">Home</a></li>
+                        <li class="nav-items"> <a href="#">Perfil</a></li>
+                        <li class="nav-items"><a href="#">Contacme</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- TITULO DE LA PAGINA -->
+            <h1 class="tilte-aside">Taller de JavaScript</h1>
+            <!-- CONTENEDOR DEL MENU PRINCIPAL -->
+            <nav class="container-navAside">
+                <!-- ITEMS DEL MENU -->
+                <ul class="nav-aside">
+                    <!-- TALLER DE FIGURAS GEOMETRICAS -->
+                    <li class="list__items list_items--click">
+                        <!-- TITULO Y BOTON DE FIGURAS GEOMETRICAS -->
+                        <div class=" list__botton list__button--click">
+                            <a class="boton-encendido" href="#">Figuras Geométricas</a>
+                        </div>
+                        <!-- MENU DESPEGABLE DEL TALLER DE FIGURAS GEOMETRIAS -->
+                        <ul class="nav-figurasGeometricas ">
+                            <!-- SUB-TITULO DE FIGURAS GEOMETRICAS -->
+                            <p class="nav-title">Primer Taller del Curso practico de JavaScript</p>
+                            <!-- SUB-MENU DE FIGURAS GEOMETRICAS -->
+                            <div class="container-links">
+                                <li class="figuras-link cuadrado"><a
+                                        href="../html/main-figuras-cuadrado.html">Cuadrado</a> </li>
+                                <li class="figuras-link triangulo"><a
+                                        href="../html/main-figuras-triangulo.html">Triangulo</a> </li>
+                                <li class="figuras-link circulo"><a href="../html/main-figuras-circulo.html">Circulo</a>
+                                </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- TALLER DE DESCUENTO -->
+                    <li class="list__items">
+                        <div class="list__botton">
+                            <a href="../html/main-porcentaje.html">Porcentajes y Descuentos</a>
+                        </div>
+                    </li>
+                    <!-- TALLER DE ESTADISTICA -->
+                    <li class="list__items list_items--click">
+                        <!-- TITULO Y BOTON DE ESTADISTICA -->
+                        <div class=" list__botton list__button--click">
+                            <a class="boton-encendido" href="#">Estadistica</a>
+                        </div>
+                        <!-- MENU DESPEGABLE DEL TALLER DE ESTADISTICA -->
+                        <ul class="nav-figurasGeometricas ">
+                            <!-- SUB-TITULO DE ESTADISTICA -->
+                            <p class="nav-title">Tercer Taller del Curso practico de JavaScript</p>
+                            <!-- SUB-MENU DE ESTADISTICA -->
+                            <div class="container-links">
+                                <li class="figuras-link cuadrado"><a href="">Media Aritmetica</a></li>
+                                <li class="figuras-link triangulo"><a href="">Mediana</a> </li>
+                                <li class="figuras-link circulo"><a href="">Moda</a> </li>
+                            </div>
+                        </ul>
+                    </li>
+                    <!-- TALLER 4 -->
+                    <li class="list__items">
+                        <div class="list__botton">
+                            <a href="#">Otro Taller</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+
+    <footer>
+        <section class="footer-name">
+            <p class="name-title">Ieesús Chumpitaz</p>
+            <p class="name-subtitle">Front-end Developer</p>
+        </section>
+        <section class="footer-social">
+            <a class="social git-hub" href="#"></a>
+            <a class="social linkendin" href="#"></a>
+            <a class="social twiter" href="#"></a>
+        </section>
+        <section class="footer-mensaje">
+            <p class="text-mensaje">Echo con <span class="text-emogi"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>
