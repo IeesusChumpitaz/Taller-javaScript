@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller de JavaScript | figuras Geometricas</title>
+    <title>Web-Workshop | figuras Geometricas</title>
     <link rel="stylesheet" href="../css/figuras-geometricas.css">
 </head>
 
@@ -20,10 +20,10 @@
             <div class="cards__title-container ">
                 <div class="logo__figuras"></div>
                 <!-- titulo del seccion cuadrado -->
-                <h2 class="title__cards">Vamos a calcular el area y el perimetro del cuadrado!</h2>
+                <h2 class="title__cards">Vamos a calcular el area y el perimetro del <span>cuadrado</span>!</h2>
             </div>
             <!-- EL CONTENEDOR DEL SECTION CUADRADO  -->
-            <section class="container-cards">
+            <section id="section-cuadrado" class="container-cards">
                 <!-- CARD-LADOS-CUADRADO-->
                 <div class="cards cards__lados" id="cards cards__lados">
                     <!--TITULO-CARDS-->
@@ -47,7 +47,8 @@
                         </div>
                     </form>
                     <!-- TUTORIAL-CARD-LADOS-CUADRADO-->
-                    <div class="container__tutorial container__tutorial--cuadrado active" id="container__tutorial">
+                    <div class="container__tutorial container__tutorial--cuadrado activeTutorial"
+                        id="container__tutorial">
                         <div class="container-tutorial-title">
                             <h3 class="tutorial__title">Formula</h3>
                             <span class="tutorial__icon" id="tutorial__icon">x</span>
@@ -60,7 +61,8 @@
                 <!-- CARD-PERIMETRO-CUADRADO-->
                 <div class="cards cards__perimetro">
                     <!-- TUTORIAL-CARD-PERIMETRO-CUADRADO-->
-                    <div class="container__tutorial container__tutorial--cuadrado active" id="container__tutorial">
+                    <div class="container__tutorial container__tutorial--cuadrado activeTutorial"
+                        id="container__tutorial">
                         <div class="container-tutorial-title">
                             <h3 class="tutorial__title">Formula</h3>
                             <span class="tutorial__icon" id="tutorial__icon">x</span>
@@ -112,7 +114,8 @@
                         </div>
                     </form>
                     <!-- TUTORIAL-CARD-AREA-CUADRADO-->
-                    <div class="container__tutorial container__tutorial--cuadrado active" id="container__tutorial">
+                    <div class="container__tutorial container__tutorial--cuadrado activeTutorial"
+                        id="container__tutorial">
                         <div class="container-tutorial-title">
                             <h3 class="tutorial__title">Formula</h3>
                             <span class="tutorial__icon" id="tutorial__icon">x</span>
@@ -127,7 +130,7 @@
                 </div>
             </section>
             <!-- EL CONTENEDOR DEL SECTION TRAINGULO -->
-            <section class="container-cards">
+            <section id="section-triangulo" class="container-cards">
                 <!-- CARD-LADOS-TRIANGULO -->
                 <div class="cards cards__lados-triangulo">
                     <!--TITULO-CARD -->
@@ -159,7 +162,7 @@
                         </div>
                     </form>
                     <!-- TUTORIAL-CARD-LADOS-TRIANGULO-->
-                    <div class="container__tutorial active" id="container__tutorial">
+                    <div class="container__tutorial activeTutorial" id="container__tutorial">
                         <div class="container-tutorial-title">
                             <h3 class="tutorial__title">Formula</h3>
                             <span class="tutorial__icon" id="tutorial__icon">x</span>
@@ -190,7 +193,7 @@
                         </div>
                     </form>
                     <!-- TUTORIAL-CARD-PERIMETRO-TRIANGULO-->
-                    <div class="container__tutorial active" id="container__tutorial">
+                    <div class="container__tutorial activeTutorial" id="container__tutorial">
                         <div class="container-tutorial-title">
                             <h3 class="tutorial__title">Formula</h3>
                             <span class="tutorial__icon" id="tutorial__icon">x</span>
@@ -226,7 +229,7 @@
                         </div>
                     </form>
                     <!-- TUTORIAL-CARD-AREA-TRIANGULO-->
-                    <div class="container__tutorial active" id="container__tutorial">
+                    <div class="container__tutorial activeTutorial" id="container__tutorial">
                         <div class="container-tutorial-title">
                             <h3 class="tutorial__title">Formula</h3>
                             <span class="tutorial__icon" id="tutorial__icon">x</span>
@@ -241,7 +244,7 @@
                 </div>
             </section>
             <!-- EL CONTENEDOR DEL SECTION CIRCULO -->
-            <section class="container-cards">
+            <section id="section-circulo" class="container-cards">
                 <!-- CARD-PERIMETRO-CIRCUNFERENCIA-CIRCULO -->
                 <div class="cards cards__perimetro--circulo">
                     <!-- TITULO-CARDS -->
@@ -263,7 +266,7 @@
                         </div>
                     </form>
                     <!-- TUTORIAL-CARD-CIRCUNFERENCIA-CIRCULO-->
-                    <div class="container__tutorial active" id="container__tutorial">
+                    <div class="container__tutorial activeTutorial" id="container__tutorial">
                         <div class="container-tutorial-title">
                             <h3 class="tutorial__title">Formula</h3>
                             <span class="tutorial__icon" id="tutorial__icon">x</span>
@@ -300,7 +303,7 @@
                         </div>
                     </form>
                     <!-- TUTORIAL-CARD-DIAMETRO-CIRCULO-->
-                    <div class="container__tutorial active" id="container__tutorial">
+                    <div class="container__tutorial activeTutorial" id="container__tutorial">
                         <div class="container-tutorial-title">
                             <h3 class="tutorial__title">Formula</h3>
                             <span class="tutorial__icon" id="tutorial__icon">x</span>
@@ -333,7 +336,7 @@
                         </div>
                     </form>
                     <!-- TUTORIAL-CARD-CIRCUNFERENCIA-CIRCULO-->
-                    <div class="container__tutorial active" id="container__tutorial">
+                    <div class="container__tutorial activeTutorial" id="container__tutorial">
                         <div class="container-tutorial-title">
                             <h3 class="tutorial__title">Formula</h3>
                             <span class="tutorial__icon" id="tutorial__icon">x</span>
@@ -355,19 +358,23 @@
         <div class="bar-aside">
             <!-- CONTEINER DEL lOGO Y MENU-HEADER -->
             <div class="navbar">
-                <!-- LOGO -->
-                <div class="logo-aside"></div>
                 <!-- MENU-HEADER -->
-                <nav class="navbar-header">
-                    <ul class="container-navItems">
-                        <li class="nav-items"><a href="../html/index.html">Home</a></li>
-                        <li class="nav-items"> <a href="#">Perfil</a></li>
-                        <li class="nav-items"><a href="#">Contacme</a></li>
+                <div class="menu__list-container">
+                    <ul class="menu__list">
+                        <li class="list"><a href="./index.html">Home</a></li>
+                        <li class="list"><a href="#">Blogs</a></li>
+                        <li class="list"><a href="#">About me</a></li>
+                        <li class="list"><a href="#">Contact me</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
             <!-- TITULO DE LA PAGINA -->
-            <h1 class="tilte-aside">Taller de JavaScript</h1>
+            <div class="container__aside-logo">
+                <!-- LOGO -->
+                <div class="logo-aside"></div>
+                <!-- TITLE -->
+                <h1 class="tilte-aside">Web-Workshop</h1>
+            </div>
             <!-- CONTENEDOR DEL MENU PRINCIPAL -->
             <nav class="container-navAside">
                 <!-- ITEMS DEL MENU -->
@@ -375,38 +382,30 @@
                     <!-- TALLER DE FIGURAS GEOMETRICAS -->
                     <li class="list__items list_items--click">
                         <!-- TITULO Y BOTON DE FIGURAS GEOMETRICAS -->
-                        <div class=" list__botton list__button--click">
-                            <a class="boton-encendido" href="#">Figuras Geométricas</a>
-                        </div>
+                        <a class="boton-encendido" href="#">Figuras Geométricas</a>
                         <!-- MENU DESPEGABLE DEL TALLER DE FIGURAS GEOMETRIAS -->
-                        <ul class="nav-figurasGeometricas ">
+                        <ul class="nav__despegable ">
                             <!-- SUB-TITULO DE FIGURAS GEOMETRICAS -->
                             <p class="nav-title">Primer Taller del Curso practico de JavaScript</p>
                             <!-- SUB-MENU DE FIGURAS GEOMETRICAS -->
                             <div class="container-links">
-                                <li class="figuras-link cuadrado"><a
-                                        href="../html/main-figuras-cuadrado.html">Cuadrado</a> </li>
-                                <li class="figuras-link triangulo"><a
-                                        href="../html/main-figuras-triangulo.html">Triangulo</a> </li>
-                                <li class="figuras-link circulo"><a href="../html/main-figuras-circulo.html">Circulo</a>
+                                <li class="figuras-link link-cuadrado"><a>Cuadrado</a> </li>
+                                <li class="figuras-link link-triangulo"><a>Triangulo</a> </li>
+                                <li class="figuras-link link-circulo"><a>Circulo</a>
                                 </li>
                             </div>
                         </ul>
                     </li>
                     <!-- TALLER DE DESCUENTO -->
                     <li class="list__items">
-                        <div class="list__botton">
-                            <a href="../html/main-porcentaje.html">Porcentajes y Descuentos</a>
-                        </div>
+                        <a href="../html/main-porcentaje.html">Porcentajes y Descuentos</a>
                     </li>
                     <!-- TALLER DE ESTADISTICA -->
                     <li class="list__items list_items--click">
                         <!-- TITULO Y BOTON DE ESTADISTICA -->
-                        <div class=" list__botton list__button--click">
-                            <a class="boton-encendido" href="#">Estadistica</a>
-                        </div>
+                        <a class="boton-encendido boton-stats" href="#">Estadistica</a>
                         <!-- MENU DESPEGABLE DEL TALLER DE ESTADISTICA -->
-                        <ul class="nav-figurasGeometricas ">
+                        <ul class="nav__despegable nav__despegable-stats">
                             <!-- SUB-TITULO DE ESTADISTICA -->
                             <p class="nav-title">Tercer Taller del Curso practico de JavaScript</p>
                             <!-- SUB-MENU DE ESTADISTICA -->
@@ -442,6 +441,7 @@
             <p class="text-mensaje">Echo con <span class="text-emogi"></span></p>
         </section>
     </footer>
+    <script src="../js/sub-menu.js"></script>
 </body>
 
 </html>

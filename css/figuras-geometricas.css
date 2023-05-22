@@ -26,6 +26,9 @@
         color: var(--white);
         overflow-x:hidden;
     }
+    .active {
+        height: 18rem !important;
+    }
 /*ESTILOS DEL BODY*/
     body{
         width: 100vw;
@@ -66,14 +69,14 @@
 
     .container-main-welcome{
         grid-column: 5/11;
-        grid-row: 1/9;
+        grid-row: 1/8;
         width: 100%;
-        height: 75%;
+        height: 100%;
         display: grid;
         grid-template-columns: repeat(6,1fr);
         grid-template-rows: repeat(7,1fr);
         position: relative;
-        margin-top: 6rem;
+        /* margin-top: 4rem; */
     }
     /* ESTILOS DEL FONDO DEL MAIN-CUADRADO*/
     .container-welcome-img-geo{
@@ -98,12 +101,13 @@
         .mainCards{
             position: absolute;
             width: 110%;
-            height: 90%;
+            height: 100%;
             grid-column: 1 / 7;
             grid-row: 1 / 8;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            margin-top: 1.5rem;
                 
         }
         .cards__title-container{
@@ -112,6 +116,7 @@
             align-items: center;
             place-self: center;
             justify-content: space-between;
+            margin-bottom: 1.5rem;
         }
         .logo__figuras{
             height: 3rem;
@@ -134,7 +139,6 @@
             grid-template-rows: repeat(2,1fr);
             justify-items: center;
             align-items: center;
-            padding: 1rem 0;
             grid-gap: 1rem 1rem;
         }
 
@@ -184,7 +188,7 @@
         }
 
         /* ESTILOS DEL TUTORIAL DE LAS CARDS EN GENERAL*/
-        .active{
+        .activeTutorial{
             display: none !important;
         }
         .container__tutorial{
@@ -588,64 +592,65 @@
     
     /*ESTILOS DEL LOGO DEL ASIDE*/
     .navbar{
-        position: absolute;
-        width: 100vw;
+        width: 100%;
         height: 5rem;
         display: flex;
         z-index: 2;
         justify-content: space-between;
-        align-items: center;
-        padding: 0rem 1rem 0 1rem;
-    }
-    .logo-aside{
-        width: 4rem;
-        height: 4rem;
-        background-image: url(../assets/icon/logoJS.svg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        place-self: center;
-        margin-left: 1rem;
-        margin-top: 2rem;
+        align-items: flex-start;
+        padding: 1rem 1rem 0 1rem;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        margin-top: 1rem;
     }
     
-    .container-navItems{
-        width: 31rem;
-        height: 1.8rem;
+    .menu__list-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu__list{
+        width: 90%;
         display: flex;
         justify-content: space-between;
+    }
+    .list{
         list-style: none;
     }
-    /*ESTILOS DEL  MENU-HEADER DEL ASIDE*/
-    .nav-items{
-        height: 2.4rem;
-        font-style: normal;
-        font-size: 1.4rem;
-        font-weight: 700;
-        text-align: justify;
-        text-transform: uppercase;
-    }
-    .nav-items a{
+    .list a{
+        font-size: 1.5rem;
         text-decoration: none;
         color: var(--white);
     }
-    .nav-items a:hover{
-        font-size: 1.6rem;
-        color: var(--verdeFosforecente);
-    }
     /*ESTILOS DEL TITULO DE LA PAGINA*/
-    .tilte-aside{
-        font-weight: 400;
-        font-size: 2.8rem;
+    .container__aside-logo{
+        display: flex;
+        width: 100%;
+        height: 5rem;
         grid-column: 1/3;
-        grid-row: 2/3;
-        justify-self: self-start;
+        grid-row: 1/2;
+        align-self: end;
+        justify-content: start;
+        padding-left: 2rem;
+    }
+    .logo-aside{
+        width: 5rem;
+        height: 5rem;
+        background-image: url(../assets/icon/iconCode.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        place-self: center;
+    }
+    .tilte-aside{
+        font-weight: 800;
+        font-size: 2.8rem;
         align-self: center;
-        font-family: 'Lilita One', cursive;
+        font-family: 'Lato';
         text-transform: uppercase;
         color: var(--white);
         padding-left: 2rem;
-        -webkit-text-stroke: 2px var(--black);
     }
     /*ESTILOS DEL CONTENEDOR DEL MENU PRINCIPAL DEL ASIDE*/
     .container-navAside{
@@ -653,7 +658,6 @@
         height: 100%;
         grid-column: 1/3;
         grid-row: 3/8;
-        align-self: center;
         place-self: center;
     }
     /*ESTILOS DEL ITEMS DEL MENU DEL ASIDE*/
@@ -662,8 +666,9 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
+
     /*ESTILOS DEL TALLER DE FIGURAS GEOMETRICAS DEL ASIDE*/
     .list__items{
         width: 100%;
@@ -698,7 +703,7 @@
     }
     
     /*ESTILOS DEL MENU DESPEGABLE DEL TALLER DE FIGURAS GEOMETRIAS DEL ASIDE*/
-    .nav-figurasGeometricas{
+    .nav__despegable{
         width: 100%;
         list-style: none;
         transition: height .4s;
@@ -745,7 +750,7 @@
         .figuras-link:hover a{
             color: #000;
             font-weight: 800;
-            font-size: 1.9rem;
+            font-size: 1.7rem;
         }
 
 /*ESTILOS DEL FOOTER*/

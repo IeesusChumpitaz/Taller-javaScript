@@ -1,146 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Taller de JavaScript</title>
+    <title>Web-Workshop</title>
     <link rel="stylesheet" href="../css/style.css">
 </head>
+
 <body>
-
     <!-- HEADER -->
-
-     <header>
-        <button class="logo-js-button"></button>
-    </header> 
-
-    <!-- EL BAR-ASIDE -->
-
-    <aside> 
-          <!-- CONTEINER DEL ASIDE -->
-        <div class="aside">
-            <!-- CONTEINER DEL LOGO Y MENU-HEADER  -->
-            <div class="navbar">
-                <!-- LOGO -->
-                <div class="logo-aside"></div>
-                <!-- MENU-HEADER -->
-                <nav class="navbar-header">
-                    <ul class="container-navItems">
-                        <li class="nav-items"><a href="#">Home</a></li>
-                        <li class="nav-items"> <a href="#">Perfil</a></li>
-                        <li class="nav-items"><a href="#">Contacme</a></li>
-                    </ul>
-                </nav>
+    <header class="header">
+        <nav class="menu">
+            <div class="menu__logo-container">
+                <img class="menu__logo-img" src="../assets/icon/iconCode.svg" alt="logo">
+                <p class="menu__logo-title">Web-Workshop</p>
             </div>
-            <!-- TITULO DE LA PAGINA -->
-            <h1 class="tilte-aside">Taller de JavaScript</h1>
-            <!-- CONTENEDOR DEL MENU PRINCIPAL -->
-            <nav class="container-navAside">
-                <!-- ITEMS DEL MENU -->
-                <ul class="nav-aside">
-                        <!-- TALLER DE FIGURAS GEOMETRICAS -->
-                        <li class="list__items list_items--click">
-                            <!-- TITULO Y BOTON DE FIGURAS GEOMETRICAS -->
-                            <div class=" list__botton list__button--click">
-                                <a class="boton-encendido"href="#">Figuras Geométricas</a>
-                            </div>
-                            <!-- MENU DESPEGABLE DEL TALLER DE FIGURAS GEOMETRIAS -->
-                            <ul class="nav-figurasGeometricas ">
-                                <!-- SUB-TITULO DE FIGURAS GEOMETRICAS -->
-                            <p class="nav-title">Primer Taller del Curso practico de JavaScript</p>
-                               <!-- SUB-MENU DE FIGURAS GEOMETRICAS -->
-                                <div class="container-links">
-                                   <li class="figuras-link cuadrado"><a href="../html/main-figuras-cuadrado.html">Cuadrado</a> </li>
-                                   <li class="figuras-link triangulo"><a href="../html/main-figuras-triangulo.html">Triangulo</a> </li>
-                                   <li class="figuras-link circulo"><a href="../html/main-figuras-circulo.html">Circulo</a> </li>
-                               </div>
-                           </ul>
-                        </li>
-                        <!-- TALLER DE PORCENTAGE -->
-                        <li class="list__items">
-                            <div class="list__botton">
-                                <a href="../html/main-porcentaje.html">Porcentajes y Descuentos</a>
-                            </div>
-                        </li>
-                        <!-- TALLER DE ESTADISTICA -->
-                        <li class="list__items list_items--click">
-                            <!-- TITULO Y BOTON DE ESTADISTICA -->
-                            <div class=" list__botton list__button--click">
-                                <a class="boton-encendido"href="#">Estadistica</a>
-                            </div>
-                            <!-- MENU DESPEGABLE DEL TALLER DE ESTADISTICA -->
-                            <ul class="nav-figurasGeometricas ">
-                                <!-- SUB-TITULO DE ESTADISTICA -->
-                            <p class="nav-title">Tercer Taller del Curso practico de JavaScript</p>
-                               <!-- SUB-MENU DE ESTADISTICA -->
-                                <div class="container-links">
-                                   <li class="figuras-link cuadrado"><a href="">Media Aritmetica</a></li>
-                                   <li class="figuras-link triangulo"><a href="">Mediana</a> </li>
-                                   <li class="figuras-link circulo"><a href="">Moda</a> </li>
-                               </div>
-                           </ul>
-                        </li>
-                        <!-- TALLER 4 -->
-                        <li class="list__items">
-                            <div class="list__botton">
-                                <a href="#">Otro Taller</a>
-                            </div>
-                        </li>
+            <div class="menu__list-container">
+                <ul class="menu__list">
+                    <li class="list"><a href="../html/index.html">Home</a></li>
+                    <li class="list"><a href="#">Blogs</a></li>
+                    <li class="list"><a href="#">About me</a></li>
+                    <li class="list"><a href="#">Contact me</a></li>
                 </ul>
-            </nav>
-        </div>
-    </aside>
-
+            </div>
+        </nav>
+    </header>
     <!-- EL MAIN-WELCOME -->
-
-    <main class="container-main-welcome">
+    <main class="main">
         <!-- FONDO DEL MAIN  -->
-        <figure class="container-welcome-img">
-            <img class="welcome-img" src="../assets/img/fondo2.svg" alt="imagen de fondo">
+        <figure class="main__container-img">
+            <img class="main-img" src="../assets/img/fondo2.svg" alt="imagen de fondo">
         </figure>
-
         <!-- EL MAIN DEL TEXTO BIENVENIDA -->
-
-        <section class="text-welcome">
-
+        <section class="text-container">
             <!-- EL TITULO DEL TEXTO BIENVENIDA -->
-
-            <div class="title-welcome-container"><h2 class="title-welcome">Hola, Bienvenido al taller de JavaScript</h2></p></div>
-            <!-- EL CONTENEDOR DEL TEXTO DE LAS INSTRUCCIONES -->
-            <div class="welcome-instruccions"> 
-                <!--  INSTRUCCIONES DERECHA -->
-                <div class="instruccion instruccion1">
-                    <p class="instruccion-text">Acercate al boton del menu para escoger entre los tallares que hay.</p>
-                </div>
-                <!--  INSTRUCCIONES IZQUIERDA -->
-                <div class="instruccion instruccion2">
-                    <p class="instruccion-text">En cada card y en cada taller hay un minitutorial.</p>
-                </div>
-            </div>            
+            <div class="text__welcome-container">
+                <h2 class="text__welcome">Hi, Welcome to the </br>Web-Workshop!</h2>
+            </div>
+            <!-- boton para empezar-->
+            <div class="text__button-container">
+                <a class="text__button" href="./index-figurasGeo.html">Start Now</a>
+            </div>
         </section>
     </main>
-
-    <!-- EL FOOTER -->
-
-    <footer>
-        <section class="footer-name">
-                <p class="name-title">Ieesús Chumpitaz</p>
-                <p class="name-subtitle">Front-end Developer</p> 
-        </section>
-        <section class="footer-social">
-            <a class="social git-hub" href="#"></a>
-            <a class="social linkendin" href="#"></a>
-           <a class="social twiter" href="#"></a>
-        </section>
-        <section class="footer-mensaje">
-            <p class="text-mensaje">Echo con <span class="text-emogi"></span></p>
-        </section>
-    </footer>
-
-    <!-- JAVA-SCRIPT -->
-
-    <script src="../js/sub-menu.js"></script>
-
 </body>
+
 </html>
