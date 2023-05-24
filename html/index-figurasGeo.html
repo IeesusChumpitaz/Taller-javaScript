@@ -20,7 +20,9 @@
             <div class="cards__title-container ">
                 <div class="logo__figuras"></div>
                 <!-- titulo del seccion cuadrado -->
-                <h2 class="title__cards">Vamos a calcular el area y el perimetro del <span>cuadrado</span>!</h2>
+                <h2 class="title__cards">Vamos a calcular el area y <span id="text-section">el perimetro</span> del
+                    <span id="name-section">cuadrado</span>!
+                </h2>
             </div>
             <!-- EL CONTENEDOR DEL SECTION CUADRADO  -->
             <section id="section-cuadrado" class="container-cards">
@@ -41,7 +43,7 @@
                         <div class="container__input">
                             <input type="number" name="" id="input__lados--cuadrados" placeholder="cm"
                                 class="input__ingresar input__lados">
-                            <button type="button" class="button button__lados" onclick="ingresar__ladosCuadrado()">
+                            <button type="button" class="button button__lados">
                                 <p>ingresar</p>
                             </button>
                         </div>
@@ -85,9 +87,8 @@
                         <label for="calcular__perimetro--cuadrado" class="instruccions instruccions__perimetro">Calcula
                             el perimetro del cuadrado</label>
                         <!-- IMPUT-CALCULAR-->
-                        <div class="container__input">
-                            <button type="button" onclick="calcular__perimetroCuadrado()"
-                                class="button button__perimetro">
+                        <div class="container__input container__inputPerimetro">
+                            <button type="button" class=" button button__perimetro">
                                 <p>calcular</p>
                             </button>
                         </div>
@@ -107,8 +108,8 @@
                         <label for="calcular__area--cuadrado" class="instruccions instruccions__area">calcula el area
                             del cuadrado</label>
                         <!-- IMPUT-CALCULAR-->
-                        <div class="container__input">
-                            <button type="button" onclick="calcular__areaCuadrado()" class="button button__area">
+                        <div class="container__input container__inputArea">
+                            <button type="button" class="button button__area">
                                 <p>calcular</p>
                             </button>
                         </div>
@@ -442,6 +443,7 @@
         </section>
     </footer>
     <script src="../js/sub-menu.js"></script>
+    <!-- <script src="../js/script.js"></script> -->
 </body>
 
 </html>

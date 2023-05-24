@@ -29,6 +29,9 @@
     .active {
         height: 18rem !important;
     }
+    .oculto{
+        display: none !important;
+    }
 /*ESTILOS DEL BODY*/
     body{
         width: 100vw;
@@ -289,6 +292,7 @@
             justify-content: space-evenly;
             align-items: center;
         }
+
         .input__ingresar{
             width: 9.4rem;
             height: 3rem;
